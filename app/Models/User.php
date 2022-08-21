@@ -25,7 +25,7 @@ class User extends Authenticatable
          'mobile',
            'status',
             'image',
-           'is_relation_manager',
+         
     ];
 
     /**
