@@ -144,7 +144,6 @@ CREATE TABLE `users` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `mobile` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `is_relation_manager` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -157,11 +156,11 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `mobile`, `is_relation_manager`, `password`, `image`, `remember_token`, `created_at`, `updated_at`, `status`) VALUES
-(1, 'Kepha Monyoncho', 'funsoftsystems@gmail.com', NULL, '0705435345', 'yes', '$2y$10$4hZ6Q./bl/1cbDyWWETdp.WN5gYFoGKvqvrIJ2O7PYnZ6hxvkwqpm', '', NULL, '2022-05-25 17:35:41', '2022-07-31 05:27:32', 1),
-(2, 'George Muema', 'test@gmail.com', NULL, '0705435345', 'yes', '$2y$10$QYJ2ZLOuNJmXM74MuPZNNuiWKaX7NjYlw7BMHTUfO/RYrnp9spYHW', '2nd.JPG', NULL, NULL, '2022-07-31 05:27:28', 1),
-(20, 'Eric mukwenze', 'erico@gmail.com', NULL, '578568568', 'yes', '$2y$10$M4GVezsV9YT.NcLp3QF4Ie8s8la6WTVb3gHtMuwSxJCHwjwUuW3.W', '', NULL, '2022-06-09 08:59:45', '2022-06-26 05:26:46', 1),
-(21, 'Mutuku Muia', 'mutuku@gmail.com', NULL, '235345345634', 'yes', '$2y$10$4hZ6Q./bl/1cbDyWWETdp.WN5gYFoGKvqvrIJ2O7PYnZ6hxvkwqpm', '', NULL, '2022-06-09 10:09:41', '2022-06-26 05:26:30', 1);
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `mobile`,`password`, `image`, `remember_token`, `created_at`, `updated_at`, `status`) VALUES
+(1, 'Kepha Monyoncho', 'kinara@gmail.com', NULL, '0705435345', '$2y$10$4hZ6Q./bl/1cbDyWWETdp.WN5gYFoGKvqvrIJ2O7PYnZ6hxvkwqpm', '', NULL, '2022-05-25 17:35:41', '2022-07-31 05:27:32', 1),
+(2, 'George Muema', 'test@gmail.com', NULL, '0705435345', '$2y$10$QYJ2ZLOuNJmXM74MuPZNNuiWKaX7NjYlw7BMHTUfO/RYrnp9spYHW', '2nd.JPG', NULL, NULL, '2022-07-31 05:27:28', 1),
+(20, 'Eric mukwenze', 'erico@gmail.com', NULL, '578568568', '$2y$10$M4GVezsV9YT.NcLp3QF4Ie8s8la6WTVb3gHtMuwSxJCHwjwUuW3.W', '', NULL, '2022-06-09 08:59:45', '2022-06-26 05:26:46', 1),
+(21, 'Mutuku Muia', 'mutuku@gmail.com', NULL, '235345345634', '$2y$10$4hZ6Q./bl/1cbDyWWETdp.WN5gYFoGKvqvrIJ2O7PYnZ6hxvkwqpm', '', NULL, '2022-06-09 10:09:41', '2022-06-26 05:26:30', 1);
 
 --
 -- Indexes for dumped tables
