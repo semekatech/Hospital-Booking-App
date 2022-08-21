@@ -25,7 +25,7 @@
                                     <div class="card-body pb-0">
                                         <div class="float-start">
                                             <p class="mb-1">Total Bookings</p>
-                                            <h2 class="counter mb-0">2</h2>
+                                            <h2 class="counter mb-0">{{ App\Models\Booking::All()->count()}}</h2>
                                         </div>
                                         <div class="float-end">
                                             <span class="mini-stat-icon bg-info"><i class="fa fa-users"></i></span>
@@ -46,7 +46,7 @@
                             <div class="col-12 col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title mb-0">Loans</h3>
+                                        <h3 class="card-title mb-0">Bookings</h3>
                                     </div>
                                     <div class="card-body pt-4">
                                         <div class="grid-margin">
