@@ -10,3 +10,7 @@ Frontend: bootstrap,html, css
 
 1) Run npm install
 2) run composer update
+3) import database
+3) php artisan serve
+4) access here localhost:8080
+5) admin panel localhost:8080/admin
